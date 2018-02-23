@@ -50,9 +50,9 @@ def fast_dance(tile, tile_hash)
   tile_hash[tile]
 end
 
-
-p fast_dance("up", tile_hash)
-p slow_dance("down", tile_arr)
+# 
+# p fast_dance("up", tile_hash)
+# p slow_dance("down", tile_arr)
 
 
 
