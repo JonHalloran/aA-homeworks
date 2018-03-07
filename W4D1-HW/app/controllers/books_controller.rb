@@ -3,19 +3,16 @@ class BooksController < ApplicationController
     # your code here
 
     @books = Book.all
+    render :index
   end
 
   def new
     # your code here
+    render :new
   end
 
   def create
-    p params.keys
-    p "Hello World"
-    helpful = params[:book]
-    p helpful
-    p helpful.class
-    Book.create!(author: helpful[:author], title: helpful[:title])
+    Book.create!(author: params[:book][:author], title: params[:book][:title])
     redirect_to action: "index"
     # your code here
   end
