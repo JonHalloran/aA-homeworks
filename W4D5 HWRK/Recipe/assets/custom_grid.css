@@ -32,10 +32,15 @@ with a class attribute containing 'col-' */
 .col-1-8 {
   width: 12.5%;
 }
-
+.hamburger {
+  display: none;
+}
 /* CSS Day 6 media queries */
 @media all and (max-width: 900px) {
   [class*='col-'] {
     width: 100%;
+  }
+  .hamburger{
+    display: block;
   }
 }
