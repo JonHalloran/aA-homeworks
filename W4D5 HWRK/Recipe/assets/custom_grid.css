@@ -32,15 +32,39 @@ with a class attribute containing 'col-' */
 .col-1-8 {
   width: 12.5%;
 }
-.hamburger {
+.hamburger_dropdown {
   display: none;
+  /* background-image: url("/Users/jonathanhalloran/Desktop/aA-homeworks/W4D5 HWRK/Recipe/assets/hamburger.png"); */
+}
+
+.hamburger_dropdown li {
+  background: url("/assets/hamburger.png");
+  background-image: url("/assets/hamburger.png");
+  background-size: 50px, 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
 }
 /* CSS Day 6 media queries */
 @media all and (max-width: 900px) {
   [class*='col-'] {
     width: 100%;
   }
-  .hamburger{
+
+  header nav ul li ul {
     display: block;
+  }
+
+  header nav ul li{
+    display: none;
+  }
+  .hamburger_dropdown{
+    display: block;
+  }
+
+  .hamburger_dropdown:hover {
+    display: block;
+    position: sticky;
   }
 }
